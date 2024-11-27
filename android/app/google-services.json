@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "426511571683",
+    "project_id": "atelier-4-n-benzala-iir5-fa98a",
+    "storage_bucket": "atelier-4-n-benzala-iir5-fa98a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426511571683:android:7549abd374d79102aa43d6",
+        "android_client_info": {
+          "package_name": "com.examp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG-Lg_wkdWXcW3AuBzJOaMZxyfqpNfFm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

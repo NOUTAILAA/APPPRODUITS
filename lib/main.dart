@@ -1,28 +1,32 @@
 import 'package:flutter/material.dart';
-import 'produits_list.dart';
-import 'data/base.dart';
-import 'dao/produit_dao.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_ui_auth/firebase_ui_auth.dart'; 
+import './screens/login_screen.dart';
+import 'firebase_options.dart'; 
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
-void main() {
-  final database = ProduitsDatabase();
-  final produitDAO = ProduitDAO(database);
+  // Initialisation de Firebase
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
-  runApp(ProduitsApp(produitDAO: produitDAO));
+  // Configuration du fournisseur d'authentification
+  FirebaseUIAuth.configureProviders([
+    EmailAuthProvider(),
+  ]);
+
+  runApp(ProduitsApp());
 }
 
 class ProduitsApp extends StatelessWidget {
-  final ProduitDAO produitDAO;
-
-  ProduitsApp({required this.produitDAO});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Produits App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: ProduitsList(produitDAO: produitDAO),
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: LoginScreen(), // Remplacez par l'écran de connexion
     );
   }
 }
