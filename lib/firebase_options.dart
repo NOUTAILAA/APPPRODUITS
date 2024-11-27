@@ -41,13 +41,13 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyD8JpkouX7CZ2F_R3OhXkdShireg6np4RQ',
-    appId: '1:426511571683:web:2764f9ca07624f83aa43d6',
-    messagingSenderId: '426511571683',
-    projectId: 'atelier-4-n-benzala-iir5-fa98a',
-    authDomain: 'atelier-4-n-benzala-iir5-fa98a.firebaseapp.com',
-    storageBucket: 'atelier-4-n-benzala-iir5-fa98a.firebasestorage.app',
-  );
+     apiKey: "AIzaSyD8JpkouX7CZ2F_R3OhXkdShireg6np4RQ",
+  authDomain: "atelier-4-n-benzala-iir5-fa98a.firebaseapp.com",
+  projectId: "atelier-4-n-benzala-iir5-fa98a",
+  storageBucket: "atelier-4-n-benzala-iir5-fa98a.firebasestorage.app",
+  messagingSenderId: "426511571683",
+  appId: "1:426511571683:web:2764f9ca07624f83aa43d6"
+ );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAG-Lg_wkdWXcW3AuBzJOaMZxyfqpNfFm8',

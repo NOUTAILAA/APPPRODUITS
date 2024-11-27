@@ -26,7 +26,7 @@ class ProduitsApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Produits App',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: LoginScreen(), // Remplacez par l'écran de connexion
+      home: LoginScreen(), 
     );
   }
 }
